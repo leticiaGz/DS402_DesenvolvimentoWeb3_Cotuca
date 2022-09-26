@@ -2128,11 +2128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\letic\\Downloads\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
+      "projectUniqueName": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
       "projectName": "ProjetoEscola_API",
-      "projectPath": "C:\\Users\\letic\\Downloads\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
+      "projectPath": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
       "packagesPath": "C:\\Users\\letic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\letic\\Downloads\\ProjetoEscola_API\\ProjetoEscola_API\\obj\\",
+      "outputPath": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\letic\\AppData\\Roaming\\NuGet\\NuGet.Config"
