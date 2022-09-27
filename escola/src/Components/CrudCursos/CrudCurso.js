@@ -19,8 +19,7 @@ function deletar(id){
 
     axios.delete(`${api}/${id}`)
    .then(window.location.reload(false))
-    }
-
+}
 
 
 
