@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj": {}
+    "/Users/u21102/Documents/Ds402/DS402_DesenvolvimentoWeb3_Cotuca/ProjetoEscola_API/ProjetoEscola_API/ProjetoEscola_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj": {
+    "/Users/u21102/Documents/Ds402/DS402_DesenvolvimentoWeb3_Cotuca/ProjetoEscola_API/ProjetoEscola_API/ProjetoEscola_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
+        "projectUniqueName": "/Users/u21102/Documents/Ds402/DS402_DesenvolvimentoWeb3_Cotuca/ProjetoEscola_API/ProjetoEscola_API/ProjetoEscola_API.csproj",
         "projectName": "ProjetoEscola_API",
-        "projectPath": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
-        "packagesPath": "C:\\Users\\letic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\letic\\OneDrive\\Documentos\\cotuca\\meu repositorio\\DS402\\ProjetoEscola_API\\ProjetoEscola_API\\obj\\",
+        "projectPath": "/Users/u21102/Documents/Ds402/DS402_DesenvolvimentoWeb3_Cotuca/ProjetoEscola_API/ProjetoEscola_API/ProjetoEscola_API.csproj",
+        "packagesPath": "/Users/u21102/.nuget/packages/",
+        "outputPath": "/Users/u21102/Documents/Ds402/DS402_DesenvolvimentoWeb3_Cotuca/ProjetoEscola_API/ProjetoEscola_API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\letic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/u21102/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,8 +53,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -66,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

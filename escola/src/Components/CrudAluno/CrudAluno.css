@@ -8,6 +8,10 @@
     'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'LucidaSans', Arial, sans-serif;
 }
 
+.container-principal{
+    border-radius: 10px;
+}
+
 .cabecTabela {
     color: white;
     background-color: black;
@@ -66,28 +70,18 @@ input[type=number] {
     margin: 5px;
 }
 
-label {
-    padding: 10px;
-}
-
-.tituloCadastro {
-    margin-left: 30px;
-}
-
-.btnSalvar {
-    background-color: lightblue;
-    padding: 12px 20px;
+.btnAlterar {
+    background-color: gainsboro;
+    padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 5px 5px 5px 30px;
+    margin: 5px;
 }
 
-.btnCancelar {
-
-
-    background-color: gainsboro;
-    padding: 12px 20px;
+.btnRemover {
+    background-color: 	#DC143C;
+    padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -97,3 +91,8 @@ label {
 label {
     padding: 10px;
 }
+
+.tituloCadastro {
+    margin-left: 30px;
+}
+

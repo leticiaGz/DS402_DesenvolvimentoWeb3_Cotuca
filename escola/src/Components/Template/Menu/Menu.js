@@ -3,7 +3,9 @@ import { Link} from 'react-router-dom';
 
 export default function Menu(props) {
   return (
-    <nav className='menu'>
+   
+    
+     < nav className='menu'>
       
       <Link to="/alunos">
         Alunos
@@ -18,5 +20,7 @@ export default function Menu(props) {
       </Link>
 
     </nav>
+
+    
     ) 
 }

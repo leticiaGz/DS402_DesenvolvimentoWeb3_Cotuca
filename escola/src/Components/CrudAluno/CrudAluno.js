@@ -150,12 +150,12 @@ export default class CrudAluno extends Component {
                                     <td>{aluno.nome}</td>
                                     <td>{aluno.codCurso}</td>
                                     <td>
-                                        <button onClick={() => this.carregar(aluno)} >
+                                        <button onClick={() => this.carregar(aluno)} className="btnAlterar">
                                             Altera
                                         </button>
                                     </td>
                                     <td>
-                                        <button onClick={() => this.remover(aluno)} >
+                                        <button onClick={() => this.remover(aluno)} className="btnRemover">
                                             Remove
                                         </button>
                                     </td>
@@ -169,8 +169,11 @@ export default class CrudAluno extends Component {
     render() {
         return (
             <Main title={title}>
-                {this.renderForm()}
-                {this.renderTable()}
+                <div className='container-principal'>
+                    {this.renderForm()}
+                    {this.renderTable()}
+                </div>
+                
             </Main>
         )
     }
