@@ -12,7 +12,6 @@ const urlAPICursos = "https://localhost:7129/api/curso";
 
 const initialState = {
     aluno: { id: 0, ra: '', nome: '', codCurso: 0 },
-    curso:{ codCurso:'' },
     lista: [],
     cursos: []
 }
@@ -68,19 +67,7 @@ export default class CrudAluno extends Component {
         this.setState({ aluno });
     }
 
-    atualizaCursos(event) {
-        //clonar usuário a partir do state, para não alterar o state diretamente
 
-        const curso = { ...this.state.cursos };
-
-
-        console.log(curso.codCurso)
-        
-        //usar o atributo NAME do input identificar o campo a ser atualizado
-        /*curso[event.target.name] = event.target.value;
-        //atualizar o state
-        this.setState({ curso });*/
-    }
 
     carregar(aluno) {
         this.setState({ aluno })
@@ -126,27 +113,16 @@ export default class CrudAluno extends Component {
 
                     onChange={e => this.atualizaCampo(e)}
                 />
-                <label> Código do Curso: </label>
-                <input
-                    type="number"
-                    id="codCurso"
-                    placeholder="0"
-
-
-                    className="form-input"
-                    name="codCurso"
-
-                    value={this.state.aluno.codCurso}
-                    onChange={e => this.atualizaCampo(e)}
-                />
 
                <label> Código do Curso: </label>
-               <select name='codCurso' value={this.state.aluno.codCurso} onChange={e => this.atualizaCursos(e)}>
-               <option > </option>
+               <select className="form-select" name='codCurso' value={this.state.aluno.codCurso} onChange={e => this.atualizaCampo(e) }>
+                <option value= "disabled selected hidden"></option>
+              
                 {this.state.cursos.map( 
                         (curso) => {
                             return(
-                                <option  key={curso.id}>{curso.nomeCurso}</option>
+                                <option key={curso.id} value={curso.codCurso}>{curso.nomeCurso}</option>
+                                
                             )
                         }
                     )
