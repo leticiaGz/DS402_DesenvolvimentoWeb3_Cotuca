@@ -4,13 +4,17 @@ import Main from '../Template/Main/Main';
 import axios from 'axios';
 
 
+
 const title = "Cadastro de Alunos";
 
 const urlAPI = "https://localhost:7129/api/aluno";
+const urlAPICursos = "https://localhost:7129/api/curso";
 
 const initialState = {
     aluno: { id: 0, ra: '', nome: '', codCurso: 0 },
-    lista: []
+    curso:{ codCurso:'' },
+    lista: [],
+    cursos: []
 }
 
 export default class CrudAluno extends Component {
@@ -22,7 +26,13 @@ export default class CrudAluno extends Component {
         axios(urlAPI).then(resp => {
             this.setState({ lista: resp.data })
         })
+
+        axios(urlAPICursos).then(resp => {
+            this.setState({ cursos: resp.data })
+        })
     }
+
+  
 
     // limpando dado do aluno
     limpar() {
@@ -56,6 +66,20 @@ export default class CrudAluno extends Component {
         aluno[event.target.name] = event.target.value;
         //atualizar o state
         this.setState({ aluno });
+    }
+
+    atualizaCursos(event) {
+        //clonar usuário a partir do state, para não alterar o state diretamente
+
+        const curso = { ...this.state.cursos };
+
+
+        console.log(curso.codCurso)
+        
+        //usar o atributo NAME do input identificar o campo a ser atualizado
+        /*curso[event.target.name] = event.target.value;
+        //atualizar o state
+        this.setState({ curso });*/
     }
 
     carregar(aluno) {
@@ -115,6 +139,20 @@ export default class CrudAluno extends Component {
                     value={this.state.aluno.codCurso}
                     onChange={e => this.atualizaCampo(e)}
                 />
+
+               <label> Código do Curso: </label>
+               <select name='codCurso' value={this.state.aluno.codCurso} onChange={e => this.atualizaCursos(e)}>
+               <option > </option>
+                {this.state.cursos.map( 
+                        (curso) => {
+                            return(
+                                <option  key={curso.id}>{curso.nomeCurso}</option>
+                            )
+                        }
+                    )
+                }
+
+                </select>
                 <button className="btnSalvar"
                     onClick={e => this.salvar(e)} >
                     Salvar
